@@ -13,7 +13,7 @@
 */
 #define TRACE 0
 #include "constantes.h"
-// La fonction setup est appelée une fois 
+// La fonction setup est appelée une fois au démarrage
 void setup() {
   // Initialise la broche digitale PORT_LED en mode sortie.
   pinMode(PORT_LED, OUTPUT);

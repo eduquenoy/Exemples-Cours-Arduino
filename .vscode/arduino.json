@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "Exvariable1\\Exvariable1.ino",
+    "port": "COM10"
+}

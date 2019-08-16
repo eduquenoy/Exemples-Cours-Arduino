@@ -11,7 +11,9 @@
   https://creativecommons.org/licenses/by-nc/3.0/fr/
 
 */
-#define TRACE 0
+
+//On définit une constante TRACE
+#define TRACE 1
 #include "constantes.h"
 // La fonction setup est appelée une fois au démarrage
 void setup() {
@@ -22,11 +24,12 @@ void setup() {
 
 // La fonction loop crée une boucle infinie
 void loop() {
+
   #if TRACE
-  Serial.println(PORT_LED);
+  Serial.println(PORT_LED); //Cette partie ne sera compilée (et donc incluse dans le code), que si TRACE est à 1
   #endif
   digitalWrite(PORT_LED, ALLUME);   // Allume la LED
-  delay(1000);                       // Attente d'une seconde
+  delay(100);                       // Attente d'une seconde
   digitalWrite(PORT_LED, ETEINT);    // Eteint la LED
   delay(1000);                       // Attente d'une seconde
 }

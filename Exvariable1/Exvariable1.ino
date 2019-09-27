@@ -21,6 +21,7 @@ char c; /* déclaration du caractère c */
 float pi;
 long j,k;
 double r;
+unsigned short s;
 // La fonction setup est appelée une fois au démarrage
 void setup() {
   // Initialise la broche digitale PORT_LED en mode sortie.

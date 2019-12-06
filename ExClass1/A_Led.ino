@@ -1,0 +1,11 @@
+#include "A_Led.h"  
+Led::Led(int _pinLed){
+    pinLed = _pinLed;
+    pinMode(pinLed, OUTPUT);
+}
+void Led::swon(){
+    digitalWrite(pinLed, HIGH);   // turn the LED on (HIGH is the voltage level)
+}
+void Led::swoff(){
+  digitalWrite(pinLed, LOW);    // turn the LED off by making the voltage LOW
+}

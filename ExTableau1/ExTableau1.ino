@@ -35,10 +35,13 @@ void loop() {
   if(motif[i] == 1){
     digitalWrite(PORT_LED, ALLUME);   // Allume la LED
     delay(DUREE_BASE_ALLUME); 
+      Serial.println("LED allumée");
   }
   else{
     digitalWrite(PORT_LED, ETEINT);    // Eteint la LED
   delay(DUREE_BASE_ETEINT);
+      Serial.println("LED éteinte");
   }
+
   i++;
 }
